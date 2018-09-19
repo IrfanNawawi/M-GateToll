@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MyGateTollApp</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="tentang">
+        Terima kasih telah mengunduh aplikasi M-GateToll, M-GateToll ini adalah layanan aplikasi yang dapat memudahkan kamu untuk membantu menemukan letak gerbang tol yang berada di Jabodetabek.\n\n
+        Dan di Aplikasi ini dilengkapi dengan fitur gambar, lokasi, deskripsi lokasi dan informasi menarik lainnya.</string>
+    <string name="kritiksaran">
+        Kami sangat terbuka dengan kritik dan saran demi kemajuan aplikasi M-GateToll ini. Kamu juga dapat memberikan informasi kepada kami tentang letak gerbang tol yang belum terdaftar di aplikasi atau bahkan letak gerbang tol baru yang ada di daerah Jabodetabek dan sekitarnya.\n\n
+        Semua info dan masukkan dapat dikirimkan ke kami melalui contact dibawah ini.
+    </string>
+    <string name="exitDialog">Keluar?</string>
+    <string name="exitYes">Ya</string>
+    <string name="exitNo">Tidak</string>
+    <string name="exitToast">Ketuk dua kali untuk keluar</string>
+    <string name="title_activity_ads">AdsActivity</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_world">Hello world!</string>
+    <!-- -
+        This is an ad unit ID for a banner test ad. Replace with your own banner ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+</resources>
