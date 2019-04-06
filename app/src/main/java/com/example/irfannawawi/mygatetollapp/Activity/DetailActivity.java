@@ -34,17 +34,17 @@ public class DetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detail);
 
         //menerapkan tool bar sesuai id toolbar | ToolBarAtas adalah variabel buatan sndiri
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         // Inisialisasi
-        ivFoto = (ImageView) findViewById(R.id.ivFoto);
-        tvNamaGerbang = (TextView) findViewById(R.id.tvNamaGerbang);
-        tvNamaJalantol = (TextView) findViewById(R.id.tvNamaJalantol);
-        tvNamaKota = (TextView) findViewById(R.id.tvNamaKota);
-        tvDeskripsi = (TextView) findViewById(R.id.tvDeskripsi);
-        fab = (FloatingActionButton) findViewById(R.id.fab);
+        ivFoto = findViewById(R.id.ivFoto);
+        tvNamaGerbang = findViewById(R.id.tvNamaGerbang);
+        tvNamaJalantol = findViewById(R.id.tvNamaJalantol);
+        tvNamaKota = findViewById(R.id.tvNamaKota);
+        tvDeskripsi = findViewById(R.id.tvDeskripsi);
+        fab = findViewById(R.id.fab);
 
         // Jalankan method tampil detail berita
         showDetailGerbang();
@@ -76,7 +76,7 @@ public class DetailActivity extends AppCompatActivity {
         RequestOptions requestOptions = new RequestOptions();
         requestOptions.placeholder(R.mipmap.img_default);
         Glide.with(this)
-                .load("https://nawdroidtv.000webhostapp.com/images/" + fotoGerbang)
+                .load("36.67.240.27:9191/go/img/welcome/welcome1.png")
                 .apply(requestOptions)
                 .into(ivFoto);
 

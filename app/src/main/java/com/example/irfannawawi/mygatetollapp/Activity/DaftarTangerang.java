@@ -30,11 +30,11 @@ public class DaftarTangerang extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_daftar_tangerang);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        recyclerView = (RecyclerView) findViewById(R.id.rv_tol);
+        recyclerView = findViewById(R.id.rv_tol);
         recyclerView.setLayoutManager(new LinearLayoutManager(DaftarTangerang.this));
 
         tampilGateTollJakarta();

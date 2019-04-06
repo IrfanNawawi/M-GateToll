@@ -20,7 +20,6 @@ import com.example.irfannawawi.mygatetollapp.R;
 
 import java.util.List;
 
-
 public class AdapterGateToll extends RecyclerView.Adapter<AdapterGateToll.MyViewHolder> {
     // Buat Global variable untuk manampung context
     Context context;
@@ -96,10 +95,10 @@ public class AdapterGateToll extends RecyclerView.Adapter<AdapterGateToll.MyView
         public MyViewHolder(View itemView) {
             super(itemView);
             // inisialisasi widget
-            tvNamaGerbang = (TextView) itemView.findViewById(R.id.tvNamaGerbang);
-            tvNamaJalantol = (TextView) itemView.findViewById(R.id.tvNamaJalantol);
-            tvNamaKota = (TextView) itemView.findViewById(R.id.tvNamaKota);
-            img_tol = (ImageView) itemView.findViewById(R.id.img_foto);
+            tvNamaGerbang = itemView.findViewById(R.id.tvNamaGerbang);
+            tvNamaJalantol = itemView.findViewById(R.id.tvNamaJalantol);
+            tvNamaKota = itemView.findViewById(R.id.tvNamaKota);
+            img_tol = itemView.findViewById(R.id.img_foto);
         }
     }
 }

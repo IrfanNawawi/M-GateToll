@@ -36,10 +36,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        sliderView = (SliderView) findViewById(R.id.sliderView);
-        mLinearLayout = (LinearLayout) findViewById(R.id.pagesContainer);
+        sliderView = findViewById(R.id.sliderView);
+        mLinearLayout = findViewById(R.id.pagesContainer);
 
-        daftargerbang = (LinearLayout) findViewById(R.id.daftar_gerbang);
+        daftargerbang = findViewById(R.id.daftar_gerbang);
         daftargerbang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(daftar);
             }
         });
-        petagerbang = (LinearLayout) findViewById(R.id.peta_gerbang);
+        petagerbang = findViewById(R.id.peta_gerbang);
         petagerbang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,15 +55,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(peta);
             }
         });
-        carigerbang = (LinearLayout) findViewById(R.id.cari_gerbang);
+        carigerbang = findViewById(R.id.cari_gerbang);
         carigerbang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent cari = new Intent(MainActivity.this, InputGerbang.class);
+                Intent cari = new Intent(MainActivity.this, CariActivity.class);
                 startActivity(cari);
             }
         });
-        beritalalin = (LinearLayout) findViewById(R.id.berita_lalin);
+        beritalalin = findViewById(R.id.berita_lalin);
         beritalalin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         mediaPlayer = MediaPlayer.create(this, R.raw.ost);
-        tentangkami = (LinearLayout) findViewById(R.id.tentang);
+        tentangkami = findViewById(R.id.tentang);
         tentangkami.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                 final AlertDialog dialog = alert.create();
                 dialog.show();
 
-                final TextView tvYes = (TextView) alertLayout.findViewById(R.id.tvOK);
+                final TextView tvYes = alertLayout.findViewById(R.id.tvOK);
                 tvYes.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
                 });
             }
         });
-        hubungikami = (LinearLayout) findViewById(R.id.hubungi);
+        hubungikami = findViewById(R.id.hubungi);
         hubungikami.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
                 final AlertDialog dialog = alert.create();
                 dialog.show();
 
-                final ImageView telp = (ImageView) alertLayout.findViewById(R.id.img_tlp);
+                final ImageView telp = alertLayout.findViewById(R.id.img_tlp);
                 telp.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
-                final ImageView email = (ImageView) alertLayout.findViewById(R.id.img_email);
+                final ImageView email = alertLayout.findViewById(R.id.img_email);
                 email.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {

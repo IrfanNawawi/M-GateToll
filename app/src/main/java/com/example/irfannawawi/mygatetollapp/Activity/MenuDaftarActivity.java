@@ -18,11 +18,11 @@ public class MenuDaftarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_daftar);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        jakarta = (FrameLayout) findViewById(R.id.flJakarta);
+        jakarta = findViewById(R.id.flJakarta);
         jakarta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,7 +31,7 @@ public class MenuDaftarActivity extends AppCompatActivity {
             }
         });
 
-        bogor = (FrameLayout) findViewById(R.id.flBogor);
+        bogor = findViewById(R.id.flBogor);
         bogor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,7 +40,7 @@ public class MenuDaftarActivity extends AppCompatActivity {
             }
         });
 
-        depok = (FrameLayout) findViewById(R.id.flDepok);
+        depok = findViewById(R.id.flDepok);
         depok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,7 +49,7 @@ public class MenuDaftarActivity extends AppCompatActivity {
             }
         });
 
-        tangerang = (FrameLayout) findViewById(R.id.flTangerang);
+        tangerang = findViewById(R.id.flTangerang);
         tangerang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,7 +58,7 @@ public class MenuDaftarActivity extends AppCompatActivity {
             }
         });
 
-        bekasi = (FrameLayout) findViewById(R.id.flBekasi);
+        bekasi = findViewById(R.id.flBekasi);
         bekasi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -121,7 +121,6 @@
                 android:resource="@xml/searchable"
                 android:value=".Activity.MainActivity" />
         </activity>
-        <activity android:name=".Activity.InputGerbang"></activity>
     </application>
 
 </manifest>

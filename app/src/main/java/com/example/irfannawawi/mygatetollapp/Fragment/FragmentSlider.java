@@ -32,7 +32,7 @@ public class FragmentSlider extends Fragment {
                              Bundle savedInstanceState) {
         imageUrls = getArguments().getString(ARG_PARAM1);
         View view = inflater.inflate(R.layout.fragment_slider, container, false);
-        ImageView img = (ImageView) view.findViewById(R.id.img);
+        ImageView img = view.findViewById(R.id.img);
         Glide.with(getActivity())
                 .load(imageUrls)
 //                .placeholder(R.drawable.ic_launcher_background)
